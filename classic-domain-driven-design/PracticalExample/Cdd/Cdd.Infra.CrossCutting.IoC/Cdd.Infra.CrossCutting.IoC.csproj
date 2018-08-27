@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Cdd.Application\Cdd.Application.csproj" />
+    <ProjectReference Include="..\Cdd.Domain\Cdd.Domain.csproj" />
+    <ProjectReference Include="..\Cdd.Infra.CrossCutting.Identity\Cdd.Infra.CrossCutting.Identity.csproj" />
+    <ProjectReference Include="..\Cdd.Infra.Data\Cdd.Infra.Data.csproj" />
+  </ItemGroup>
+
+</Project>

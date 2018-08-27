@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="EventHandlers\" />
+    <Folder Include="Events\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="Models\" />
+    <Folder Include="Validations\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Cdd.Domain.Core\Cdd.Domain.Core.csproj" />
+    <ProjectReference Include="..\Cdd.Infra.CrossCutting.Bus\Cdd.Infra.CrossCutting.Bus.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Cdd.Application\Cdd.Application.csproj" />
+    <ProjectReference Include="..\Cdd.Infra.CrossCutting.Identity\Cdd.Infra.CrossCutting.Identity.csproj" />
+    <ProjectReference Include="..\Cdd.Infra.CrossCutting.IoC\Cdd.Infra.CrossCutting.IoC.csproj" />
+  </ItemGroup>
+
+</Project>
