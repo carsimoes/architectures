@@ -1,4 +1,6 @@
-﻿namespace Cdd.Application.ViewModels
+﻿using AutoMapper;
+
+namespace Cdd.Application.ViewModels
 {
 	public class ErrorViewModel
 	{

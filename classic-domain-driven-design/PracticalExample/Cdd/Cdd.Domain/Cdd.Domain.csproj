@@ -8,8 +8,10 @@
     <Folder Include="EventHandlers\" />
     <Folder Include="Events\" />
     <Folder Include="Interfaces\" />
-    <Folder Include="Models\" />
-    <Folder Include="Validations\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DomainValidation" Version="1.0.0" />
   </ItemGroup>
 
   <ItemGroup>
