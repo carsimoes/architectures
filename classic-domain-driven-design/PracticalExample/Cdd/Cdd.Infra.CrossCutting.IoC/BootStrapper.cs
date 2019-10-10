@@ -25,7 +25,7 @@ namespace Cdd.Infra.CrossCutting.IoC
 			container.Register<IClienteRepository, ClienteRepository>(Lifestyle.Scoped);
 			container.Register<IUnitOfWork, UnitOfWork>(Lifestyle.Scoped);
 			container.Register<DevContext>(Lifestyle.Scoped);
-			//container.Register(typeof (IRepository<>), typeof (Repository<>));
+			container.Register(typeof (IRepository<>), typeof (Repository<>));
 
 			// Logging
 			//container.Register<ILogAuditoria, LogAuditoriaHelper>(Lifestyle.Scoped);

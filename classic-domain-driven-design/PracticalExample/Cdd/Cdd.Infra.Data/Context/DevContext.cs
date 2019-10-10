@@ -7,12 +7,25 @@ namespace Cdd.Infra.Data.Context
 {
 	public class DevContext : DbContext
 	{
-		public DevContext() /*: base("DefaultConnection")*/
+		//public DevContext() /*: base("DefaultConnection")*/
+		//{
+
+		//}
+
+		public virtual DbSet<Cliente> Clientes { get; set; }
+
+		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 		{
+			base.OnConfiguring(optionsBuilder);
+			optionsBuilder.UseSqlServer("Data Source=ICI-138408\\SQLEXPRESS;Initial Catalog=con-dominium;Integrated Security=True");
 
+			//if (String.IsNullOrEmpty(ConnectionString))
+			//{
+			//	ConnectionString = "server=den1.mysql4.gear.host;uid=condominiumdev2;pwd=Tm4FVVy0_!20;database=condominiumdev2";
+			//}
+
+			//optionsBuilder.UseMySql(ConnectionString);
 		}
-
-		public DbSet<Cliente> Clientes { get; set; }
 
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{

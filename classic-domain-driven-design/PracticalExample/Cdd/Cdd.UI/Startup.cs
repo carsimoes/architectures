@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Cdd.Infra.CrossCutting.IoC;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -9,6 +10,7 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using SimpleInjector;
 
 namespace Cdd.UI
 {
@@ -31,6 +33,7 @@ namespace Cdd.UI
 				options.MinimumSameSitePolicy = SameSiteMode.None;
 			});
 
+			SimpleInjectorInitializer.Initialize();
 
 			services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 		}
@@ -58,6 +61,10 @@ namespace Cdd.UI
 									name: "default",
 									template: "{controller=Home}/{action=Index}/{id?}");
 			});
+
+
 		}
+
+
 	}
 }

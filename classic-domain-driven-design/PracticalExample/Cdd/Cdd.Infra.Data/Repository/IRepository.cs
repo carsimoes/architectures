@@ -19,6 +19,6 @@ namespace Cdd.Infra.Data.Repository
 
 		IEnumerable<TEntity> Buscar(Expression<Func<TEntity, bool>> predicate);
 
-		int SaveChanges();
+		//int SaveChanges();
 	}
 }
